@@ -1,0 +1,15 @@
+:root{--bg:#0d0f17;--panel:#161a26;--red:#e50914;--muted:#9aa3b5}
+body{background:var(--bg);color:#f3f4f8;font-family:system-ui,-apple-system,"Segoe UI",sans-serif}
+a{color:inherit}.navbar{background:#090b11!important;border-bottom:1px solid #222736}.brand{font-weight:800;letter-spacing:.5px;color:#fff;text-decoration:none;font-size:1.4rem}.brand b{color:var(--red)}
+.btn-red{background:var(--red);border-color:var(--red);color:#fff}.btn-red:hover{background:#b8070f;color:#fff}.btn-red:disabled{opacity:.5}
+.panel,.card-dark{background:var(--panel);border:1px solid #232a3b;border-radius:14px}
+.hero{border-radius:18px;padding:3rem 2rem;background:linear-gradient(110deg,#2a0a10,#0d0f17 70%);border:1px solid #2a2030}
+.poster{aspect-ratio:2/3;border-radius:12px 12px 0 0;display:flex;align-items:flex-end;padding:12px;font-weight:700;font-size:1.1rem;background:linear-gradient(160deg,var(--c1,#7a0f1a),var(--c2,#14182a));background-size:cover;background-position:center}
+.mcard{transition:transform .15s;text-decoration:none}.mcard:hover{transform:translateY(-4px)}
+.form-control,.form-select{background:#0f1320;color:#fff;border-color:#2b3248}.form-control:focus,.form-select:focus{background:#0f1320;color:#fff;border-color:var(--red);box-shadow:0 0 0 .2rem rgba(229,9,20,.25)}
+.screen{height:8px;border-radius:50%;background:linear-gradient(#fff,#555);margin:0 auto 28px;width:70%;box-shadow:0 12px 30px rgba(255,255,255,.25)}
+.seat{width:30px;height:30px;margin:3px;border-radius:7px 7px 3px 3px;border:1px solid #3a4260;background:#222a40;color:#cfd6ea;font-size:.65rem;padding:0}
+.seat.sel{background:var(--red);border-color:var(--red);color:#fff}.seat.bk{background:#3b3f4d;color:#777;cursor:not-allowed;border-style:dashed}
+.seat:focus-visible,.btn:focus-visible{outline:2px solid #fff;outline-offset:2px}.muted{color:var(--muted)}
+@media print{.navbar,.no-print{display:none!important}body{background:#fff;color:#000}.panel{border:2px dashed #000;background:#fff}}
+@media (max-width:576px){.seat{width:24px;height:24px;margin:2px}}

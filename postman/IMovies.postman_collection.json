@@ -1,0 +1,8 @@
+{"info":{"name":"IMovies","schema":"https://schema.getpostman.com/json/collection/v2.1.0/collection.json"},"variable":[{"key":"base","value":"http://localhost:5000/api"},{"key":"token","value":""}],
+"item":[
+{"name":"Login (admin)","request":{"method":"POST","header":[{"key":"Content-Type","value":"application/json"}],"url":"{{base}}/auth/login","body":{"mode":"raw","raw":"{\"email\":\"admin@imovies.com\",\"password\":\"Admin@123\"}"}}},
+{"name":"Movies","request":{"method":"GET","url":"{{base}}/movies"}},
+{"name":"Shows","request":{"method":"GET","url":"{{base}}/shows"}},
+{"name":"Create booking","request":{"method":"POST","header":[{"key":"Content-Type","value":"application/json"},{"key":"Authorization","value":"Bearer {{token}}"}],"url":"{{base}}/bookings","body":{"mode":"raw","raw":"{\"showId\":\"<show id>\",\"seats\":[\"A1\",\"A2\"]}"}}},
+{"name":"My bookings","request":{"method":"GET","header":[{"key":"Authorization","value":"Bearer {{token}}"}],"url":"{{base}}/bookings/mine"}},
+{"name":"Admin stats","request":{"method":"GET","header":[{"key":"Authorization","value":"Bearer {{token}}"}],"url":"{{base}}/admin/stats"}}]}
